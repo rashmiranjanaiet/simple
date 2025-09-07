@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aurora — Modern Portfolio (Animated)</title>
+  <meta name="description" content="Aurora — modern one-page portfolio template with advanced animations and next-gen UI/UX.">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="theme-light">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Custom cursor -->
+  <div id="cursor" aria-hidden="true"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Aurora home">
+        <svg width="38" height="38" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#6a6cff"/><stop offset="1" stop-color="#3dd3c1"/></linearGradient></defs>
+          <circle cx="12" cy="12" r="10" fill="url(#g)"></circle>
+          <path d="M8 12l3 3 5-7" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+        </svg>
+        <span class="brand-text">Aurora</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn ghost" aria-pressed="false" title="Toggle dark mode">🌙</button>
+        <button id="mobileNavToggle" class="btn mobile-only" aria-expanded="false" aria-controls="nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy animate-reveal" data-reveal>
+          <div class="eyebrow">We design & ship</div>
+          <h1 class="hero-title">Design + Code for human experiences</h1>
+          <p class="lead">We craft beautifully simple web products — fast, accessible, and delightful. Motion adds clarity and joy.</p>
+          <div class="hero-ctas">
+            <a class="btn primary btn-animated" href="#contact" data-cta>Work with us</a>
+            <a class="btn ghost btn-animated" href="#work">See our work</a>
+          </div>
+          <ul class="stats">
+            <li><strong>120+</strong><span>Projects</span></li>
+            <li><strong>9.8/10</strong><span>Avg rating</span></li>
+            <li><strong>7</strong><span>Years</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual animate-reveal" data-reveal>
+          <!-- animated gradient backdrop + floating device -->
+          <div class="hero-layer">
+            <svg class="hero-blob" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs>
+                <linearGradient id="hg" x1="0" x2="1">
+                  <stop offset="0" stop-color="#6a6cff"/>
+                  <stop offset="1" stop-color="#3dd3c1"/>
+                </linearGradient>
+              </defs>
+              <g fill="url(#hg)" opacity="0.18">
+                <path d="M421.6,15.7C482.6,25.3,537.3,70.6,562.4,121c27.4,54.8,22.1,114.9-11.4,164.4C502,361.3,392.7,405.1,310,395.8
+                  c-82.7-9.3-156.9-78.8-195-150C77.9,173.5,86.3,92.7,130.9,50.2S340.6,6.2,421.6,15.7z"/>
+              </g>
+            </svg>
+
+            <div class="device floating-device" aria-hidden="true">
+              <svg viewBox="0 0 360 720" class="screen">
+                <rect x="10" y="10" rx="28" ry="28" width="340" height="700" fill="#071023" opacity="0.9"></rect>
+                <rect x="28" y="80" rx="14" ry="14" width="304" height="560" fill="url(#screenGrad)"></rect>
+                <defs>
+                  <linearGradient id="screenGrad" x1="0" x2="1">
+                    <stop offset="0" stop-color="#f7fbff"/>
+                    <stop offset="1" stop-color="#eef8ff"/>
+                  </linearGradient>
+                </defs>
+                <g transform="translate(40,110)">
+                  <rect x="0" y="0" width="220" height="36" rx="8" fill="#6a6cff"></rect>
+                  <rect x="0" y="60" width="180" height="16" rx="6" fill="#e6eefc"></rect>
+                  <rect x="0" y="96" width="220" height="120" rx="10" fill="#ffffff"></rect>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title animate-reveal" data-reveal>What we do</h2>
+        <p class="section-sub animate-reveal" data-reveal>Strategy, design and engineering — delivered in focused sprints.</p>
+
+        <div class="cards">
+          <article class="card tilt" data-tilt>
+            <div class="card-icon">🎯</div>
+            <h3>Product Strategy</h3>
+            <p>Research, roadmaps and product discovery to ensure we build the right thing.</p>
+            <a class="card-link" href="#contact" aria-label="Talk about product strategy">Start conversation →</a>
+          </article>
+
+          <article class="card tilt" data-tilt>
+            <div class="card-icon">🎨</div>
+            <h3>Design Systems</h3>
+            <p>Scalable UI systems, component libraries and accessible patterns.</p>
+            <a class="card-link" href="#work" aria-label="See design systems work">See examples →</a>
+          </article>
+
+          <article class="card tilt" data-tilt>
+            <div class="card-icon">⚡</div>
+            <h3>Front-end Engineering</h3>
+            <p>High-performance, semantic HTML with modern JS and pragmatic CSS.</p>
+            <a class="card-link" href="#work" aria-label="See engineering work">Explore →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / Portfolio -->
+    <section id="work" class="section alt">
+      <div class="container">
+        <h2 class="section-title animate-reveal" data-reveal>Selected work</h2>
+        <p class="section-sub animate-reveal" data-reveal>A snapshot of projects — interaction-focused and accessible.</p>
+
+        <div class="portfolio-grid" aria-live="polite">
+          <figure class="portfolio-item" tabindex="0" data-reveal>
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%236a6cff'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='36' fill='white'>Project A</text></svg>" alt="Project A screenshot">
+            <figcaption>
+              <h4>Project A</h4>
+              <p>Brand & web for a fintech startup — performance-first landing experience.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="portfolio-item" tabindex="0" data-reveal>
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%233dd3c1'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='36' fill='white'>Project B</text></svg>" alt="Project B screenshot">
+            <figcaption>
+              <h4>Project B</h4>
+              <p>Design system & component library for an e-commerce platform.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="portfolio-item" tabindex="0" data-reveal>
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%23ffb86b'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='36' fill='white'>Project C</text></svg>" alt="Project C screenshot">
+            <figcaption>
+              <h4>Project C</h4>
+              <p>Mobile-first progressive web app for community engagement.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2 class="section-title animate-reveal" data-reveal>What clients say</h2>
+        <div class="testimonials">
+          <blockquote class="testimonial" data-reveal>
+            <p>“Aurora transformed our product. The team shipped faster than expected and made it look effortless.”</p>
+            <footer>— Priya S., CEO, NovaPay</footer>
+          </blockquote>
+
+          <blockquote class="testimonial" data-reveal>
+            <p>“Thoughtful design, reliable delivery and an attention to accessibility we hadn't experienced before.”</p>
+            <footer>— Michael R., Head of Product, Shoplane</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt contact-section">
+      <div class="container">
+        <h2 class="section-title animate-reveal" data-reveal>Get in touch</h2>
+        <p class="section-sub animate-reveal" data-reveal>Tell us about your project — we'll reply within 2 business days.</p>
+
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form" action="#" novalidate>
+            <label>
+              <span>Your name</span>
+              <input type="text" name="name" id="name" required minlength="2" placeholder="Jane Doe" autocomplete="name">
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" id="email" required placeholder="jane@example.com" autocomplete="email">
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" id="message" rows="6" required minlength="10" placeholder="Tell us about your project..."></textarea>
+            </label>
+
+            <div class="form-row">
+              <button id="submitBtn" type="submit" class="btn primary btn-animated">Send message</button>
+              <button type="button" id="resetBtn" class="btn ghost">Reset</button>
+            </div>
+
+            <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-info" aria-label="Contact information">
+            <div class="info-card">
+              <h4>Email</h4>
+              <p><a href="mailto:hello@aurora.example">hello@aurora.example</a></p>
+            </div>
+
+            <div class="info-card">
+              <h4>Location</h4>
+              <p>Bengaluru, India</p>
+            </div>
+
+            <div class="info-card">
+              <h4>Phone</h4>
+              <p><a href="tel:+911234567890">+91 12345 67890</a></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Aurora — crafted with care</p>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#top">Back to top</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#work">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
